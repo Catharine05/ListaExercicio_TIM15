@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo JS 03</title>
+</head>
+<body>
+    <h1>Boletim de Português</h1>
+    <p>Aluno: <span id="nAluno"></span></p>
+    <p>Nota01: <span id="nota01"></span></p>
+    <p>Nota02: <span id="nota02"></span></p>
+    <p>Nota03: <span id="nota03"></span></p>
+    <p>Frequência: <span id="frequencia"></span></p>
+
+    <script>
+        let nAluno = prompt("Digite o nome do aluno.");
+        let nota01 = prompt("Digite a nota01.");
+        let nota02 = prompt("Digite a nota02");
+        let nota03 = prompt("Digite a nota03");
+        let frequencia = prompt("Digite a frequencia do aluno.");
+
+        document.getElementById("nAluno").innerHTML = nAluno;
+        document.getElementById("nota01").innerHTML = nota01;
+        document.getElementById("nota02").innerHTML = nota02;
+        document.getElementById("nota03").innerHTML = nota03;
+        document.getElementById("frequencia").innerHTML = frequencia;
+
+</script>
+</body>
+</html>

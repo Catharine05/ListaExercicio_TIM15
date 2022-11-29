@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo JS 04</title>
+</head>
+<body>
+    <h1>Boletim Português 2</h1>
+    <p>Aluno: <span id="nAluno"></span></p>
+    <p>Nota01: <span id="nota01"></span></p>
+    <p>Nota02: <span id="nota02"></span></p>
+    <p>Nota03: <span id="nota03"></span></p>
+    <P>Nome da Diciplina: <span id="nomeDici"></span></P>
+    <P>Numero da turma: <span id="numeTurma"></span></P>
+    <P>Média: <span id="media"></span></P>
+
+    <script>
+        let nAluno = prompt("Digite o nome do aluno.");
+        let nota01 = Number(prompt("Digite a primeira nota do aluno."));
+        let nota02 = Number(prompt("Digite a segunda nota do aluno."));
+        let nota03 = Number(prompt("Digite a teceira nota do aluno."));
+        let nomeDici = prompt("Digite o nome da diciplina.");
+        let numeTurma =  prompt("Digite o numero da turma.");
+        
+
+        let media = ((nota01 + nota02 + nota03) / 3);
+
+        document.getElementById("nAluno").innerHTML = nAluno;
+        document.getElementById("nota01").innerHTML = nota01;
+        document.getElementById("nota02").innerHTML = nota02;
+        document.getElementById("nota03").innerHTML = nota03;
+        document.getElementById("nomeDici").innerHTML = nomeDici;
+        document.getElementById("numeTurma").innerHTML = numeTurma;
+        document.getElementById("media").innerHTML = media;
+        
+    
+    </script>
+
+</body>
+</html>
